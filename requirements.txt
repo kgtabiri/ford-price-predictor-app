@@ -5,3 +5,5 @@ streamlit_extras
 xgboost
 pickle
 numpy
+predict_page
+explore_page
