@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+from xgboost import XGBRegressor
 
 census_divisions = {
     "New England": ["CT", "ME", "MA", "NH", "RI", "VT"],
