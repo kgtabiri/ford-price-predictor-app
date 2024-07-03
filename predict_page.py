@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-from xgboost import DMatrix
 
 census_divisions = {
     "New England": ["CT", "ME", "MA", "NH", "RI", "VT"],
