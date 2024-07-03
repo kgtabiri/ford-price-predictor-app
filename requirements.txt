@@ -1,0 +1,5 @@
+streamlit
+plotly
+pandas 
+streamlit_extras
+xgboost
