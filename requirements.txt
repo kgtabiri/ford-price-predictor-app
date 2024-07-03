@@ -1,6 +1,5 @@
-streamlit
-plotly
-pandas 
-streamlit_extras
-xgboost
-numpy
+streamlit==1.24.0
+pandas==2.0.3
+plotly==5.14.1
+xgboost==1.7.6
+streamlit_extras==0.1.53
