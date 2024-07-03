@@ -17,9 +17,20 @@ census_divisions = {
 
 # Load in trained model with label encoders
 def load_model():
-    with open('price_predictor.pkl', 'rb') as file:
-        data = pickle.load(file)
-    return data
+    try:
+        with open('price_predictor.pkl', 'rb') as file:
+            data = pickle.load(file)
+        return data
+    except FileNotFoundError:
+        st.error("The model file 'price_predictor.pkl' was not found.")
+        return None
+    except pickle.UnpicklingError:
+        st.error("The model file 'price_predictor.pkl' could not be unpickled.")
+        return None
+#def load_model():
+ #   with open('price_predictor.pkl', 'rb') as file:
+  #      data = pickle.load(file)
+   # return data
 
 data = load_model()
 
